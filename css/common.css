@@ -26,6 +26,11 @@ img {
   
 }
 
+
+
+
+/* ////////////////////////task-1////////////////////// */
+
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -34,8 +39,6 @@ img {
   margin-right: auto;
 }
 
-
-/* ////////////////////////task-1////////////////////// */
 .item {
   border-radius: 8px;
   background: #F6F6FE;
@@ -215,4 +218,17 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.64px;
+}
+
+/* ///////////////////////////task-6///////////////////////// */
+
+.boxes {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #F6F6FE;   
+
 }
