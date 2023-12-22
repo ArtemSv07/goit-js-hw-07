@@ -14,10 +14,3 @@ catItems.forEach(element => {
 })
 
 
-// //////////////////////////////////container////////////////////////////////
-// const listUl = document.querySelector('#categories');
-
-// const container = document.createElement('div');
-// container.classList.add('container');
-// listUl.before(container);
-// container.append(listUl);
