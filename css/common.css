@@ -26,8 +26,33 @@ img {
   
 }
 
-
-
+a {
+    text-decoration: none;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #4E75FF;
+    border: transparent;
+    width: 100px;
+    
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.15; 
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+a:hover,
+a:focus {
+  background-color: #6C8CFF;
+  outline: transparent;
+  outline-offset: 4px;
+}
+  
 
 /* ////////////////////////task-1////////////////////// */
 
@@ -197,8 +222,15 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.15; 
 letter-spacing: 0.04em;
+cursor: pointer;
 }
 
+.button-login:hover,
+.button-login:focus {
+  background-color: #6C8CFF;
+  outline: transparent;
+  outline-offset: 4px;
+}
 /* ///////////////////////////task-5///////////////////////// */
 
 .change-color {
@@ -218,17 +250,94 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.64px;
+cursor: pointer;
+transition: background-color 250ms linear;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: #6C8CFF;
+  outline: transparent;
+  outline-offset: 4px;
 }
 
 /* ///////////////////////////task-6///////////////////////// */
 
 .boxes {
-  
+  width: 486px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   padding: 32px;
   border-radius: 8px;
   background: #F6F6FE;   
+
+}
+
+.controls{
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+background: #F6F6FE;
+width: 486px;
+margin-bottom: 16px;
+}
+
+.input {
+display: flex;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 72px;
+padding-right: 8px;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid #808080;
+}
+
+.button-create {
+  display: flex;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+background: #4E75FF;
+border: transparent;
+color: rgba(255, 255, 255, 1);
+cursor: pointer;
+transition: background-color 250ms linear;
+}
+
+.button-create:hover,
+.button-create:focus {
+  background-color: #6C8CFF;
+  outline: transparent;
+  outline-offset: 4px;
+}
+
+.button-destroy {
+  display: flex;
+width: 120px;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background-color: #FF4E4E;
+color: rgba(255, 255, 255, 1);
+border: transparent;
+cursor: pointer;
+transition: background-color 250ms linear;
+}
+
+.button-destroy:hover, 
+.button-destroy:focus {
+  background-color:  #FF7070;
+  outline: transparent;
+  outline-offset: 4px;
 
 }
