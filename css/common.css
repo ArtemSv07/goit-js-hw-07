@@ -263,8 +263,8 @@ transition: background-color 250ms linear;
 
 /* ///////////////////////////task-6///////////////////////// */
 
-.boxes {
-  width: 486px;
+#boxes {
+
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -274,7 +274,7 @@ transition: background-color 250ms linear;
 
 }
 
-.controls{
+#controls{
   display: flex;
   padding: 32px;
   align-items: flex-start;
@@ -285,7 +285,7 @@ width: 486px;
 margin-bottom: 16px;
 }
 
-.input {
+input {
 display: flex;
 padding-top: 8px;
 padding-bottom: 8px;

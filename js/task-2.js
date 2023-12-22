@@ -32,25 +32,26 @@ const images = [
 ];
 
 
-const gallery = document.querySelector('.gallery'); // find 'ul'
+const gallery = document.querySelector('.gallery'); 
 
-for (let image of images) { //sort through the array 'images'
+const documentFragment = document.createDocumentFragment();
+
+for (let image of images) {
   
-  const listItem = document.createElement('li'); //on each cycle we create 'li'
-  listItem.classList.add('gallery-list'); //to appropriate (class="gallery-list")
+  const listItem = document.createElement('li');  
   
-  const imageElement = document.createElement('img'); //on each cycle we create 'img'
-  imageElement.src = image.url; //to appropriate (link)
-  imageElement.alt = image.alt; //to appropriate description
+  const imageElement = document.createElement('img'); 
+  imageElement.src = image.url; 
+  imageElement.alt = image.alt; 
   imageElement.width = (360)
   imageElement.height = (300)
 
-  listItem.append(imageElement); //position the image in the middle 'li'
-  gallery.append(listItem); //position the list images in the middle 'ul'
+  listItem.append(imageElement); 
+  documentFragment.append(listItem); 
   
 }
 
-
+gallery.append(documentFragment);
 
 
 //////////////////////////////////container////////////////////////////////
