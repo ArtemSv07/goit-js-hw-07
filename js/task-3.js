@@ -20,12 +20,3 @@ if(inputValue === "") { //we monitor the filling
   }
 });
 
-
-////////////////////////////container//////////////////////////////
-
-const container = document.createElement('div');
-container.classList.add('div-task-three');
-nameInput.before(container);
-container.append(nameInput, title);
-
- 
